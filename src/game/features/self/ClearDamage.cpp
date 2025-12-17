@@ -13,5 +13,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static ClearDamage _ClearDamage{"cleardamage", "Clear Damage", "Clears all the dirt and blood on you."};
+	static ClearDamage _ClearDamage{"cleardamage", "清除自身", "清除你身上的所有污垢和血迹。"};
 }

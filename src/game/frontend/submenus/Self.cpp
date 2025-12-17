@@ -9,14 +9,14 @@ namespace YimMenu::Submenus
 {
 	Self::Self() :
 		#define ICON_FA_USER "\xef\x80\x87"
-	    Submenu::Submenu("Self", ICON_FA_USER)
+	    Submenu::Submenu("自我选项", ICON_FA_USER)
 	{
-		auto main = std::make_shared<Category>("Main");
-		auto globalsGroup = std::make_shared<Group>("Globals");
+		auto main = std::make_shared<Category>("主要");
+		auto globalsGroup = std::make_shared<Group>("全局");
 		auto movementGroup = std::make_shared<Group>("Movement");
-		auto toolsGroup = std::make_shared<Group>("Tools", 2);
-		auto specialAbilityGroup = std::make_shared<Group>("Special Ability");
-		auto wantedGroup = std::make_shared<Group>("Wanted");
+		auto toolsGroup = std::make_shared<Group>("工具", 2);
+		auto specialAbilityGroup = std::make_shared<Group>("特殊能力");
+		auto wantedGroup = std::make_shared<Group>("通缉");
 
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("godmode"_J));
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("invis"_J));
@@ -61,7 +61,7 @@ namespace YimMenu::Submenus
 
 		specialAbilityGroup->AddItem(std::make_shared<BoolCommandItem>("infspecialability"_J));
 		auto specialInMp = std::make_shared<Group>("", 1);
-		specialInMp->AddItem(std::make_shared<BoolCommandItem>("mpspecialability"_J, "Enable in MP"));
+		specialInMp->AddItem(std::make_shared<BoolCommandItem>("mpspecialability"_J, "多人战局启用特殊能力"));
 		specialInMp->AddItem(std::make_shared<ConditionalItem>("mpspecialability"_J, std::make_shared<ListCommandItem>("selspecialability"_J, "##specialselect")));
 		specialAbilityGroup->AddItem(std::move(specialInMp));
 

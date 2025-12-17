@@ -120,5 +120,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static _SavePersonalVehicle __SavePersonalVehicle{"savepersonalvehicle", "Save Personal Vehicle", "Saves the current vehicle you are in as your personal vehicle."};
+	static _SavePersonalVehicle __SavePersonalVehicle{"savepersonalvehicle", "保存个人载具", "将你当前驾驶的车辆保存为你的个人车辆。"};
 }

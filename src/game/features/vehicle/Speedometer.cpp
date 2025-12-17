@@ -76,5 +76,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static Speedometer _Speedometer{"speedometer", "Speedometer", "Shows a speedometer whenever you are in a vehicle"};
+	static Speedometer _Speedometer{"speedometer", "速度表", "无论何时你在车内，都会显示车速表"};
 }

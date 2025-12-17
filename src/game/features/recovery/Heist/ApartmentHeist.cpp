@@ -135,11 +135,11 @@ namespace YimMenu::Features
 		};
 
 		static SetCuts _ApartmentHeistSetCuts{"apartmentheistsetcuts", "Set Cuts", "Sets heist cut"};
-		static ForceReady _ApartmentHeistForceReady{"apartmentheistforceready", "Force Ready", "Forces all players to be ready"};
-		static Setup _ApartmentHeistSetup{"apartmentheistsetup", "Setup", "Sets up current apartment heist"};
-		static SkipHacking _ApartmentHeistSkipHacking{"apartmentheistskiphacking", "Skip Hacking", "Skips hacking process"};
-		static SkipDrilling _ApartmentHeistSkipDrilling{"apartmentheistskipdrilling", "Skip Drilling", "Skips drilling process"};
-		static InstantFinish _ApartmentHeistInstantFinish{"apartmentheistinstantfinish", "Instant Finish", "Instantly passes the heist"};
-		static InstantFinishPacific _ApartmentHeistInstantFinishPacific{"apartmentheistinstantfinishpacific", "Instant Finish (Pacific)", "Instantly passes Pacific Standard Job"};
+		static ForceReady _ApartmentHeistForceReady{"apartmentheistforceready", "强制准备", "强制所有玩家准备就绪"};
+		static Setup _ApartmentHeistSetup{"apartmentheistsetup", "设置", "设置当前公寓抢劫"};
+		static SkipHacking _ApartmentHeistSkipHacking{"apartmentheistskiphacking", "跳过骇入", "跳过骇入过程"};
+		static SkipDrilling _ApartmentHeistSkipDrilling{"apartmentheistskipdrilling", "跳过钻孔", "跳过钻孔过程"};
+		static InstantFinish _ApartmentHeistInstantFinish{"apartmentheistinstantfinish", "立刻完成", "立即完成抢劫"};
+		static InstantFinishPacific _ApartmentHeistInstantFinishPacific{"apartmentheistinstantfinishpacific", "立刻完成（太平洋）", "立即通过太平洋标准银行差事"};
 	}
 }

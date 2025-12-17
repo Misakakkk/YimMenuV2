@@ -56,8 +56,8 @@ namespace YimMenu::Features
 		}
 	};
 
-	static ClearWanted _ClearWanted{"clearwanted", "Clear Wanted", "Clears your wanted level"};
-	static SetWanted _SetWanted{"setwanted", "Set Wanted", "Sets your wanted level to the desired level"};
-	static NeverWanted _NeverWanted{"neverwanted", "Never Wanted", "Never gain a wanted level"};
-	static FreezeWanted _FreezeWanted{"freezewanted", "Freeze Wanted", "Freeze your wanted level to the desired level"};
+	static ClearWanted _ClearWanted{"clearwanted", "清除通缉", "清除你的通缉等级"};
+	static SetWanted _SetWanted{"setwanted", "设置通缉", "设置你期望的通缉等级"};
+	static NeverWanted _NeverWanted{"neverwanted", "永不通缉", "永远不会获得通缉等级"};
+	static FreezeWanted _FreezeWanted{"freezewanted", "冻结通缉", "将你的通缉等级冻结在期望的等级"};
 }

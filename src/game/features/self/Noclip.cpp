@@ -93,5 +93,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static Noclip _NoClip{"noclip", "No Clip", "Allows you to fly through the map"};
+	static Noclip _NoClip{"noclip", "悬浮模式（无碰撞）", "让您在地图上飞行"};
 }

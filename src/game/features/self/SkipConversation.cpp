@@ -14,5 +14,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static SkipConversation _SkipConversation{"skipconversation", "Skip Conversation", "Skips current conversation in the phone."};
+	static SkipConversation _SkipConversation{"skipconversation", "跳过剧情对话", "跳过手机中的当前对话。"};
 }

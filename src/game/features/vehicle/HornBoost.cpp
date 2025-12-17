@@ -41,5 +41,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static HornBoost _HornBoost{"hornboost", "Horn Boost", "Makes the vehicle boost when you hold the horn"};
+	static HornBoost _HornBoost{"hornboost", "喇叭加速", "当你按住喇叭时，车辆会加速"};
 }

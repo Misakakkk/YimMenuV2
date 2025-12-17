@@ -141,5 +141,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static SendToProperty _SendToProperty{"sendtoproperty", "Send to Property", "Sends the player to the selected property"};
+	static SendToProperty _SendToProperty{"sendtoproperty", "Send to Property", "将玩家传送至所选房产"};
 }

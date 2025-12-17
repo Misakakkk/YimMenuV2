@@ -23,5 +23,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static FreeChangeAppearance _FreeChangeAppearance{"freechangeappearance", "Change Appearance For Free", "Allows the player to change the character's appearance for free"};
+	static FreeChangeAppearance _FreeChangeAppearance{"freechangeappearance", "外貌改变免费", "允许玩家免费更改外貌"};
 }

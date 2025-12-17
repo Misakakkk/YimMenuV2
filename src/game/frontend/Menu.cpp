@@ -119,6 +119,8 @@ namespace YimMenu
 
 		FontCfg.MergeMode = true;
 		io.Fonts->AddFontFromFileTTF((std::filesystem::path(std::getenv("SYSTEMROOT")) / "Fonts" / "arial.ttf").string().c_str(), size, &FontCfg, GetGlyphRangesCyrillicOnly());
+		// Add chinese font support
+		io.Fonts->AddFontFromFileTTF((std::filesystem::path(std::getenv("SYSTEMROOT")) / "Fonts" / "msyh.ttc").string().c_str(), size, &FontCfg, io.Fonts->GetGlyphRangesChineseFull());
 
 		io.Fonts->Build();
 

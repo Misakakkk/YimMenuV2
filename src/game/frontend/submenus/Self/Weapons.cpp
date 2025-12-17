@@ -208,7 +208,7 @@ namespace YimMenu::Submenus
 
 	std::shared_ptr<Category> BuildWeaponsMenu()
 	{
-		auto weapons = std::make_shared<Category>("Weapons");
+		auto weapons = std::make_shared<Category>("武器");
 
 		auto weaponsGlobalsGroup = std::make_shared<Group>("Globals", 12);
 		auto weaponsToolsGroup = std::make_shared<Group>("Tools", 1);

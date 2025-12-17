@@ -25,5 +25,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static SendSext _SendSext{"sendsext", "Send Sext", "Sends a random sext to the specified player"};
+	static SendSext _SendSext{"sendsext", "Send Sext", "向指定玩家发送一条随机色情短信"};
 }

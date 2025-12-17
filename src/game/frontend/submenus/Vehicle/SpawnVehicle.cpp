@@ -17,7 +17,7 @@ namespace YimMenu::Submenus
 
 	std::shared_ptr<TabItem> RenderSpawnNewVehicle()
 	{
-		auto tab = std::make_shared<TabItem>("New Vehicle");
+		auto tab = std::make_shared<TabItem>("生成载具");
 
 		auto spawn = std::make_shared<Group>("Spawn");
 		auto settings = std::make_shared<Group>("Settings");
@@ -138,7 +138,7 @@ namespace YimMenu::Submenus
 
 	std::shared_ptr<TabItem> RenderSpawnPersonalVehicle()
 	{
-		auto tab = std::make_shared<TabItem>("Personal Vehicle");
+		auto tab = std::make_shared<TabItem>("个人载具");
 
 		auto spawn = std::make_shared<Group>("Spawn");
 		auto settings = std::make_shared<Group>("Settings");
@@ -237,7 +237,7 @@ namespace YimMenu::Submenus
 
 	std::shared_ptr<Category> BuildSpawnVehicleMenu()
 	{
-		auto menu = std::make_shared<Category>("Spawn");
+		auto menu = std::make_shared<Category>("生成");
 
 		auto tabBar = std::make_shared<TabBarItem>("Spawn");
 

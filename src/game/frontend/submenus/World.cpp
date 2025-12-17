@@ -6,7 +6,7 @@ namespace YimMenu::Submenus
 {
 	World::World() :
 		#define ICON_FA_GLOBE "\xef\x82\xac"
-	    Submenu::Submenu("World", ICON_FA_GLOBE)
+	    Submenu::Submenu("世界选项", ICON_FA_GLOBE)
 	{
 		auto main = std::make_shared<Category>("Main");
 		auto iplsGroup = std::make_shared<Category>("IPLs");

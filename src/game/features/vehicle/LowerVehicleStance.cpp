@@ -26,5 +26,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static LowerVehicleStance _LowerVehicleStance{"lowervehiclestance", "Lower Vehicle Stance", "Lowers your current vehicle's stance. Only some vehicles are supported"};
+	static LowerVehicleStance _LowerVehicleStance{"lowervehiclestance", "Lower Vehicle Stance", "降低您当前车辆的底盘高度。仅支持部分车辆"};
 }

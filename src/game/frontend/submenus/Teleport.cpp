@@ -167,9 +167,9 @@ namespace YimMenu::Submenus
 
 	Teleport::Teleport() :
 		#define ICON_FA_TELEPORT "\xef\x8f\x85"
-	    Submenu::Submenu("Teleport", ICON_FA_TELEPORT)
+	    Submenu::Submenu("传送选项", ICON_FA_TELEPORT)
 	{
-		auto main = std::make_shared<Category>("Main");
+		auto main = std::make_shared<Category>("主要");
 		auto miscGroup = std::make_shared<Group>("Misc");
 
 		miscGroup->AddItem(std::make_shared<ConditionalItem>("autotptowaypoint"_J, std::make_shared<CommandItem>("tptowaypoint"_J), true));
@@ -178,7 +178,7 @@ namespace YimMenu::Submenus
 
 		main->AddItem(miscGroup);
 
-		auto customteleport = std::make_shared<Category>("Saved");
+		auto customteleport = std::make_shared<Category>("保存");
 		customteleport->AddItem(std::make_shared<ImGuiItem>([] {
 			RenderCustomTeleport();
 		}));

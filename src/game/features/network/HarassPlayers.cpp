@@ -102,5 +102,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static HarassPlayers _HarassPlayers{"harassplayers", "Harass Players", "Spoofs your position to make it appear as if you're next to all the players in the session at all times. Use with caution"};
+	static HarassPlayers _HarassPlayers{"harassplayers", "骚扰玩家", "模拟你的位置，使你看起来好像始终在战局中的所有玩家旁边。请谨慎使用"};
 }

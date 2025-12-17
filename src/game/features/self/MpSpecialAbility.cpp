@@ -62,7 +62,7 @@ namespace YimMenu::Features
 		}
 	};
 
-	static MpSpecialAbility _MpSpecialAbility{"mpspecialability", "Enable Special Abilities in MP", "Enables special abilities in multiplayer. This repurposes cut content and may be unstable"};
+	static MpSpecialAbility _MpSpecialAbility{"mpspecialability", "Enable Special Abilities in MP", "在多人游戏中启用特殊能力。这会重新利用已删减的内容，并可能导致游戏不稳定"};
 
 	void IsControlPressedHook(rage::scrNativeCallContext* ctx)
 	{

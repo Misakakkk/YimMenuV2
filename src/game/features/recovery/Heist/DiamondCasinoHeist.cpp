@@ -48,18 +48,18 @@ namespace YimMenu::Features
 		};
 
 		static std::vector<std::pair<int, const char*>> diamondCasinoHeistDifficulty = {
-			{0, "Normal"},
-			{1, "Hard"}
+			{0, "普通模式"},
+			{1, "困难模式"}
 		};
-		static ListCommand _DiamondCasinoHeistDifficulty{"diamondcasinoheistdifficulty", "Difficulty", "Heist difficulty", diamondCasinoHeistDifficulty, 0};
+		static ListCommand _DiamondCasinoHeistDifficulty{"diamondcasinoheistdifficulty", "难度", "Heist difficulty", diamondCasinoHeistDifficulty, 0};
 
 		static std::vector<std::pair<int, const char*>> diamondCasinoHeistPrimaryTarget = {
-			{3, "Diamonds"},
-			{1, "Gold"},
-			{2, "Artwork"},
-			{0, "Cash"}
+			{3, "钻石"},
+			{1, "黄金"},
+			{2, "艺术品"},
+			{0, "现金"}
 		};
-		static ListCommand _DiamondCasinoHeistPrimaryTarget{"diamondcasinoheistprimarytarget", "Primary Target", "Primary target", diamondCasinoHeistPrimaryTarget, 3};
+		static ListCommand _DiamondCasinoHeistPrimaryTarget{"diamondcasinoheistprimarytarget", "主要目标", "Primary target", diamondCasinoHeistPrimaryTarget, 3};
 
 		static ListCommand* _DiamondCasinoHeistGunmanPtr = nullptr;
 		static ListCommand* _DiamondCasinoHeistApproachPtr = nullptr;
@@ -95,15 +95,15 @@ namespace YimMenu::Features
 				{{0, ""}, {1, ""}}
 			}
 		};
-		static ListCommand _DiamondCasinoHeistWeapon{"diamondcasinoheistweapon", "Weapon", "Weapon", diamondCasinoHeistWeapon[5][0], 0};
+		static ListCommand _DiamondCasinoHeistWeapon{"diamondcasinoheistweapon", "武器", "Weapon", diamondCasinoHeistWeapon[5][0], 0};
 
 		static std::vector<std::pair<int, const char*>> diamondCasinoHeistGunman = {
-			{0, "Chester McCoy"},
-			{1, "Gustavo Mota"},
-			{2, "Patrick McReary"},
-			{3, "Charlie Reed"},
-			{4, "Karl Abolaji"},
-			{5, "Remove Gunman"}
+			{0, "切斯特.麦考伊"},
+			{1, "古斯塔沃.莫塔"},
+			{2, "帕特里克.麦克瑞利"},
+			{3, "查理.里德"},
+			{4, "卡尔.阿卜拉季"},
+			{5, "移除枪手"}
 		};
 
 		class Gunman : public ListCommand
@@ -116,12 +116,12 @@ namespace YimMenu::Features
 				_DiamondCasinoHeistWeapon.SetState(0);
 			}
 		};
-		static Gunman _DiamondCasinoHeistGunman{"diamondcasinoheistgunman", "Gunman", "Gunman", diamondCasinoHeistGunman, 5};
+		static Gunman _DiamondCasinoHeistGunman{"diamondcasinoheistgunman", "枪手", "Gunman", diamondCasinoHeistGunman, 5};
 
 		static std::vector<std::pair<int, const char*>> diamondCasinoHeistApproach = {
-			{0, "Silent & Sneaky"},
-			{1, "The Big Con"},
-			{2, "Aggressive"}
+			{0, "隐迹潜踪"},
+			{1, "兵不厌诈"},
+			{2, "气势汹汹"}
 		};
 
 		class Approach : public ListCommand
@@ -134,7 +134,7 @@ namespace YimMenu::Features
 				_DiamondCasinoHeistWeapon.SetState(0);
 			}
 		};
-		static Approach _DiamondCasinoHeistApproach{"diamondcasinoheistapproach", "Approach", "Heist approach", diamondCasinoHeistApproach, 0};
+		static Approach _DiamondCasinoHeistApproach{"diamondcasinoheistapproach", "方式", "Heist approach", diamondCasinoHeistApproach, 0};
 
 		static struct InitPtrs
 		{
@@ -146,22 +146,22 @@ namespace YimMenu::Features
 		} _initPtrs;
 
 		static std::vector<std::vector<std::pair<int, const char*>>> diamondCasinoHeistVehicle = {
-			{{0, "Zhaba"}, {1, "Vagrant"}, {2, "Outlaw"}, {3, "Everon"}},
-			{{0, "Sultan Classic"}, {1, "Gauntlet Classic"}, {2, "Ellie"}, {3, "Komoda"}},
-			{{0, "Retinue MK II"}, {1, "Drifty Yosemite"}, {2, "Sugoi"}, {3, "Jugular"}},
-			{{0, "Manchez"}, {1, "Stryder"}, {2, "Defiler"}, {3, "Lectro"}},
+			{{0, "炸吧"}, {1, "流浪者"}, {2, "不法之徒"}, {3, "埃弗伦"}},
+			{{0, "王者经典版"}, {1, "铁腕经典版"}, {2, "爱利"}, {3, "科莫达"}},
+			{{0, "随行者MK2"}, {1, "漂移约塞米蒂"}, {2, "斯国一"}, {3, "扼喉"}},
+			{{0, "曼切兹"}, {1, "斯特德"}, {2, "亵渎者"}, {3, "雷克卓"}},
 			{{0, "Issi Classic"}, {1, "Asbo"}, {2, "Kanjo"}, {3, "Sentinel Classic"}},
 			{{0, "                           "}, {1, ""}, {2, ""}, {3, ""}}
 		};
 		static ListCommand _DiamondCasinoHeistVehicle{"diamondcasinoheistvehicle", "Vehicle", "Vehicle", diamondCasinoHeistVehicle[5], 0};
 
 		static std::vector<std::pair<int, const char*>> diamondCasinoHeistDriver = {
-			{0, "Chester McCoy"},
-			{1, "Eddie Toh"},
-			{2, "Taliana Martinez"},
-			{3, "Zach Nelson"},
-			{4, "Karim Denz"},
-			{5, "Remove Driver"}
+			{0, "切斯特.麦考伊"},
+			{1, "陶艾迪"},
+			{2, "塔丽娜.马丁内斯"},
+			{3, "扎克.尼尔森"},
+			{4, "卡里姆.登茨"},
+			{5, "移除车手"}
 		};
 
 		class Driver : public ListCommand
@@ -174,17 +174,17 @@ namespace YimMenu::Features
 				_DiamondCasinoHeistVehicle.SetState(0);
 			}
 		};
-		static Driver _DiamondCasinoHeistDriver{"diamondcasinoheistdriver", "Driver", "Driver", diamondCasinoHeistDriver, 5};
+		static Driver _DiamondCasinoHeistDriver{"diamondcasinoheistdriver", "车手", "Driver", diamondCasinoHeistDriver, 5};
 
 		static std::vector<std::pair<int, const char*>> diamondCasinoHeistHacker = {
-			{4, "Avi Schwartzman"},
-			{5, "Paige Harris"},
-			{2, "Christian Feltz"},
-			{3, "Yohan Blair"},
-			{1, "Rickie Lukens"},
-			{6, "Remove Hacker"}
+			{4, "阿维.斯瓦兹曼"},
+			{5, "佩奇.哈里斯"},
+			{2, "克里斯汀.费尔兹"},
+			{3, "尤汗.布莱尔"},
+			{1, "里奇.卢肯斯"},
+			{6, "移除黑客"}
 		};
-		static ListCommand _DiamondCasinoHeistHacker{"diamondcasinoheisthacker", "Hacker", "Hacker", diamondCasinoHeistHacker, 6};
+		static ListCommand _DiamondCasinoHeistHacker{"diamondcasinoheisthacker", "黑客", "Hacker", diamondCasinoHeistHacker, 6};
 
 		class Setup : public Command
 		{
@@ -352,13 +352,13 @@ namespace YimMenu::Features
 			}
 		};
 
-		static SetCuts _DiamondCasinoHeistSetCuts{"diamondcasinoheistsetcuts", "Set Cuts", "Sets heist cut"};
-		static ForceReady _DiamondCasinoHeistForceReady{"diamondcasinoheistforceready", "Force Ready", "Forces all players to be ready"};
-		static Setup _DiamondCasinoHeistSetup{"diamondcasinoheistsetup", "Setup", "Sets up diamond casino heist"};
+		static SetCuts _DiamondCasinoHeistSetCuts{"diamondcasinoheistsetcuts", "设置分红", "设置抢劫分红"};
+		static ForceReady _DiamondCasinoHeistForceReady{"diamondcasinoheistforceready", "强制准备", "强制所有玩家准备就绪"};
+		static Setup _DiamondCasinoHeistSetup{"diamondcasinoheistsetup", "设置", "设置名钻赌场豪劫"};
 		static SetPotentialTake _DiamondCasinoHeistSetPotentialTake{"diamondcasinoheistsetpotentialtake", "Set Potential Take", "Updates potential take"};
 		static SetActualTake _DiamondCasinoHeistSetActualTake{"diamondcasinoheistsetactualtake", "Set Actual Take", "Updates actual take"};
-		static SkipHacking _DiamondCasinoHeistSkipHacking{"diamondcasinoheistskiphacking", "Skip Hacking", "Skips hacking process"};
-		static SkipDrilling _DiamondCasinoHeistSkipDrilling{"diamondcasinoheistskipdrilling", "Skip Drilling", "Skips drilling process"};
-		static InstantFinish _DiamondCasinoHeistInstantFinish{"diamondcasinoheistinstantfinish", "Instant Finish", "Instantly passes the heist"};
+		static SkipHacking _DiamondCasinoHeistSkipHacking{"diamondcasinoheistskiphacking", "跳过骇入", "跳过骇入过程"};
+		static SkipDrilling _DiamondCasinoHeistSkipDrilling{"diamondcasinoheistskipdrilling", "跳过钻孔", "跳过钻孔过程"};
+		static InstantFinish _DiamondCasinoHeistInstantFinish{"diamondcasinoheistinstantfinish", "立刻完成", "立即通过抢劫"};
 	}
 }

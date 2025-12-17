@@ -14,5 +14,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static DisableActionMode _DisableActionMode{"disableactionmode", "Disable Action Mode", "Disables the player's janky movement during combat."};
+	static DisableActionMode _DisableActionMode{"disableactionmode", "禁用动作模式", "在战斗中禁用玩家的笨拙移动。"};
 };

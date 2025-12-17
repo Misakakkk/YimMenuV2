@@ -95,7 +95,7 @@ namespace YimMenu::Features
 		}
 	};
 
-	static OpenWardrobe _OpenWardrobe{"openwardrobe", "Open Wardrobe", "Allows you to access your wardrobe remotely."};
+	static OpenWardrobe _OpenWardrobe{"openwardrobe", "打开衣柜", "让您能够远程访问您的衣柜。"};
 
 	static void GetDistanceBetweenCoordsHook(rage::scrNativeCallContext* ctx)
 	{

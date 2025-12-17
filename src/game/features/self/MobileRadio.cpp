@@ -22,5 +22,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static MobileRadio _MobileRadio{"mobileradio", "Mobile Radio", "Allows you to listen to any radio station on foot with Hotkey Q"};
+	static MobileRadio _MobileRadio{"mobileradio", "移动电台", "使用快捷键Q，您可以在步行时收听任何电台"};
 }

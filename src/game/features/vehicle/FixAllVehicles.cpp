@@ -29,5 +29,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static FixAllVehicles _FixAllVehicles{"fixallvehicles", "Fix All Vehicles", "Fixes all of your destroyed personal vehicles."};
+	static FixAllVehicles _FixAllVehicles{"fixallvehicles", "修复所有载具", "修复你所有被毁坏的个人载具。"};
 }
