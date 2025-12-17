@@ -331,6 +331,20 @@ namespace YimMenu::Features
 			}
 		};
 
+		class SoloMantrap : public Command
+		{
+			using Command::Command;
+
+			virtual void OnCall() override
+			{
+				if (auto thread = Scripts::FindScriptThread("fm_mission_controller"_J))
+				{
+					*ScriptLocal(thread, 32616).As<int*>() = 8;
+					*ScriptLocal(thread, 63640).As<int*>() = 5;
+				}
+			}
+		};
+
 		class InstantFinish : public Command
 		{
 			using Command::Command;
@@ -359,6 +373,7 @@ namespace YimMenu::Features
 		static SetActualTake _DiamondCasinoHeistSetActualTake{"diamondcasinoheistsetactualtake", "Set Actual Take", "Updates actual take"};
 		static SkipHacking _DiamondCasinoHeistSkipHacking{"diamondcasinoheistskiphacking", "跳过骇入", "跳过骇入过程"};
 		static SkipDrilling _DiamondCasinoHeistSkipDrilling{"diamondcasinoheistskipdrilling", "跳过钻孔", "跳过钻孔过程"};
+		static SoloMantrap _DiamondCasinoHeistSoloMantrap{"diamondcasinoheistsolomantrap", "Solo Mantrap", "Skips card swiping process"};
 		static InstantFinish _DiamondCasinoHeistInstantFinish{"diamondcasinoheistinstantfinish", "立刻完成", "立即通过抢劫"};
 	}
 }

@@ -94,6 +94,20 @@ namespace YimMenu::Features
 			}
 		};
 
+		class SkipSwiping : public Command
+		{
+			using Command::Command;
+
+			virtual void OnCall() override
+			{
+				if (auto thread = Scripts::FindScriptThread("fm_mission_controller"_J))
+				{
+					*ScriptLocal(thread, 32616).As<int*>() = 8;
+					*ScriptLocal(thread, 63640).As<int*>() = 5;
+				}
+			}
+		};
+
 		class InstantFinish : public Command
 		{
 			using Command::Command;
@@ -139,6 +153,7 @@ namespace YimMenu::Features
 		static Setup _ApartmentHeistSetup{"apartmentheistsetup", "设置", "设置当前公寓抢劫"};
 		static SkipHacking _ApartmentHeistSkipHacking{"apartmentheistskiphacking", "跳过骇入", "跳过骇入过程"};
 		static SkipDrilling _ApartmentHeistSkipDrilling{"apartmentheistskipdrilling", "跳过钻孔", "跳过钻孔过程"};
+		static SkipSwiping _ApartmentHeistSkipSwiping{"apartmentheistskipswiping", "Skip Swiping", "Skips card swiping process"};
 		static InstantFinish _ApartmentHeistInstantFinish{"apartmentheistinstantfinish", "立刻完成", "立即完成抢劫"};
 		static InstantFinishPacific _ApartmentHeistInstantFinishPacific{"apartmentheistinstantfinishpacific", "立刻完成（太平洋）", "立即通过太平洋标准银行差事"};
 	}
