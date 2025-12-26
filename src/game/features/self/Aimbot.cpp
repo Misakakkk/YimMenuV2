@@ -50,7 +50,7 @@ namespace YimMenu::Features
 		}
 	};
 
-	static Aimbot _Aimbot{"aimbot", "Aimbot", "Locks on to enemies and other players"};
-	static AimbotAimForHead _AimbotAimForHead{"aimbotaimforhead", "Aim For Head", "Targets the head when locking on to enemies and other players"};
-	static AimbotTargetDrivers _AimbotTargetDrivers{"aimbottargetdrivers", "Target Drivers", "Allows aimbot to lock on to enemies and other players in vehicles"};
+	static Aimbot _Aimbot{"aimbot", "自瞄", "锁定敌人和其他玩家"};
+	static AimbotAimForHead _AimbotAimForHead{"aimbotaimforhead", "瞄准头部", "锁定敌人和其他玩家时瞄准头部"};
+	static AimbotTargetDrivers _AimbotTargetDrivers{"aimbottargetdrivers", "目标驾驶员", "允许自瞄锁定车辆中的敌人和其他玩家"};
 }

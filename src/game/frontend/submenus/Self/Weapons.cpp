@@ -141,14 +141,14 @@ namespace YimMenu::Submenus
 			ImGui::EndPopup();
 		}
 
-		if (ImGui::Button("Give Weapon"))
+		if (ImGui::Button("给予武器"))
 		{
 			FiberPool::Push([] {
 				Self::GetPed().GiveWeapon(selectedWeaponHash, true);
 			});
 		}
 		ImGui::SameLine();
-		if (ImGui::Button("Remove Weapon"))
+		if (ImGui::Button("移除武器"))
 		{
 			FiberPool::Push([] {
 				Self::GetPed().RemoveWeapon(selectedWeaponHash);

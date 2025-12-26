@@ -37,5 +37,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static WeaponDamage _WeaponDamage{"weapondamage", "Weapon Damage", "Allows altering your weapons damage output"};
+	static WeaponDamage _WeaponDamage{"weapondamage", "武器伤害", "允许修改你的武器伤害输出"};
 }

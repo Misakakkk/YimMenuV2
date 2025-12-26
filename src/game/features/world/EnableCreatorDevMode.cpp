@@ -38,5 +38,5 @@ namespace YimMenu
 		}
 	};
 
-	static EnableCreatorDevMode _EnableCreatorDevMode{"enablecreatordevmode", "Enable Creator Dev Mode", "Enables the developer mode in Creator."};
+	static EnableCreatorDevMode _EnableCreatorDevMode{"enablecreatordevmode", "启用创作者开发者模式", "在Creator中启用开发者模式。"};
 }

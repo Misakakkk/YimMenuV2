@@ -66,9 +66,9 @@ namespace YimMenu::Features
 
 		static std::vector<std::vector<std::vector<std::pair<int, const char*>>>> diamondCasinoHeistWeapon = {
 			{
-				{{0, "MK II Shotgun Loadout"}, {1, "MK II Rifle Loadout"}},
-				{{0, "MK II SMG Loadout"}, {1, "MK II Rifle Loadout"}},
-				{{0, "MK II Shotgun Loadout"}, {1, "MK II Rifle Loadout"}}
+				{{0, "MK II Shotgun Loadout"}, {1, "MK2步枪装备"}},
+				{{0, "MK2冲锋枪装备"}, {1, "MK2步枪装备"}},
+				{{0, "MK II Shotgun Loadout"}, {1, "MK2步枪装备"}}
 			},
 			{
 				{{0, "Rifle Loadout"}, {1, "Shotgun Loadout"}},
@@ -150,7 +150,7 @@ namespace YimMenu::Features
 			{{0, "王者经典版"}, {1, "铁腕经典版"}, {2, "爱利"}, {3, "科莫达"}},
 			{{0, "随行者MK2"}, {1, "漂移约塞米蒂"}, {2, "斯国一"}, {3, "扼喉"}},
 			{{0, "曼切兹"}, {1, "斯特德"}, {2, "亵渎者"}, {3, "雷克卓"}},
-			{{0, "Issi Classic"}, {1, "Asbo"}, {2, "Kanjo"}, {3, "Sentinel Classic"}},
+			{{0, "天威经典版"}, {1, "反社会"}, {2, "羽黑"}, {3, "卫士经典版"}},
 			{{0, "                           "}, {1, ""}, {2, ""}, {3, ""}}
 		};
 		static ListCommand _DiamondCasinoHeistVehicle{"diamondcasinoheistvehicle", "Vehicle", "Vehicle", diamondCasinoHeistVehicle[5], 0};

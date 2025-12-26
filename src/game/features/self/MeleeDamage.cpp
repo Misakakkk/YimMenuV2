@@ -100,6 +100,6 @@ namespace YimMenu::Features
 
 	static MeleeDamage _MeleeDamage{
 	    "meleedamage",
-	    "Melee Damage",
-	    "Allows altering your melee damage output"};
+	    "近战伤害",
+	    "允许修改你的近战伤害输出"};
 }

@@ -82,5 +82,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static _OpenGunLocker __OpenGunLocker{"opengunlocker", "Open Gun Locker", "Allows you to access gun locker remotely."};
+	static _OpenGunLocker __OpenGunLocker{"opengunlocker", "打开枪械储物柜", "允许您远程访问枪械储物柜。"};
 }

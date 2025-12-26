@@ -20,6 +20,6 @@ namespace YimMenu::Features
 		}
 	};
 
-	static PedRiotMode _PedRiotMode{"PedRiotMode", "Riot Mode", "All PEDs attack each other."};
+	static PedRiotMode _PedRiotMode{"PedRiotMode", "狂暴模式", "所有路人之间都会相互攻击。"};
 
 }

@@ -27,5 +27,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static SetBounty _SetBounty{"setbounty", "Set Bounty", "给玩家设置指定的悬赏"};
+	static SetBounty _SetBounty{"setbounty", "设置悬赏", "给玩家设置指定的悬赏"};
 }

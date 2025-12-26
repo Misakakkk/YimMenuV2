@@ -20,5 +20,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static InfiniteClip _InfiniteClip{"infiniteclip", "Infinite Clip", "Have an endless clip in your gun"};
+	static InfiniteClip _InfiniteClip{"infiniteclip", "无限弹夹", "你的枪弹夹不会用完"};
 }

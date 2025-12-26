@@ -62,11 +62,11 @@ namespace YimMenu::Features
 		virtual void OnTick() override;
 	};
 
-	static CustomWeapon _CustomWeapon{"customweapon", "Custom Weapon", "Modifies weapon ability"};
-	static BoolCommand _CustomWeaponEnabledOnWeaponOut{"customweaponenabledonweaponout", "Enable Only if Weapon is Out", "Enables custom weapon only when weapon is out", true};
-	static BoolCommand _GravityGunLaunchOnRelease{"gravitygunlaunchonrelease", "Launch Entity on Release", "Launches entity when released", false};
-	static StringCommand _VehicleGunModel{"vehiclegunmodel", "Vehicle Model", "Model of the vehicle"};
-	static ColorCommand _PaintGunColor{"paintguncolor", "Paint Gun Color", "Color of the paint gun"};
-	static BoolCommand _PaintGunRainbowColorEnabled{"paintgunrainbowcolorenabled", "Rainbow Color", "Enables rainbow color for paint gun", false};
-	static IntCommand _PaintGunRainbowColorSpeed{"paintgunrainbowcolorspeed", "Rainbow Color Speed", "Speed of rainbow color for paint gun", 1, 10, 1};
+	static CustomWeapon _CustomWeapon{"customweapon", "自定义武器", "编辑武器能力"};
+	static BoolCommand _CustomWeaponEnabledOnWeaponOut{"customweaponenabledonweaponout", "仅在武器在手中时启用", "仅在武器在手中时启用自定义武器", true};
+	static BoolCommand _GravityGunLaunchOnRelease{"gravitygunlaunchonrelease", "释放时发射实体", "释放实体时发射它", false};
+	static StringCommand _VehicleGunModel{"vehiclegunmodel", "载具模型", "载具的模型"};
+	static ColorCommand _PaintGunColor{"paintguncolor", "喷漆枪颜色", "喷漆枪的颜色"};
+	static BoolCommand _PaintGunRainbowColorEnabled{"paintgunrainbowcolorenabled", "彩虹颜色", "启用喷漆枪的彩虹颜色", false};
+	static IntCommand _PaintGunRainbowColorSpeed{"paintgunrainbowcolorspeed", "彩虹颜色速度", "喷漆枪彩虹颜色的速度", 1, 10, 1};
 }

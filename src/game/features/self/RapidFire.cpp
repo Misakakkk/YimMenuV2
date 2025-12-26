@@ -85,5 +85,5 @@ namespace YimMenu::Features
 		}
 	};
 
-	static RapidFire _RapidFire{"rapidfire", "Rapid Fire", "Increases the fire rate of your weapons substantially"};
+	static RapidFire _RapidFire{"rapidfire", "快速射击", "大幅提高武器的射速"};
 }
