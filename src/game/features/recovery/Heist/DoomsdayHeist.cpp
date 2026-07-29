@@ -11,10 +11,10 @@ namespace YimMenu::Features
 {
 	namespace DoomsdayHeist
 	{
-		static IntCommand _DoomsdayHeistCut1{"doomsdayheistcut1", "Player 1", "Player 1 cut", std::nullopt, std::nullopt, 0};
-		static IntCommand _DoomsdayHeistCut2{"doomsdayheistcut2", "Player 2", "Player 2 cut", std::nullopt, std::nullopt, 0};
-		static IntCommand _DoomsdayHeistCut3{"doomsdayheistcut3", "Player 3", "Player 3 cut", std::nullopt, std::nullopt, 0};
-		static IntCommand _DoomsdayHeistCut4{"doomsdayheistcut4", "Player 4", "Player 4 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _DoomsdayHeistCut1{"doomsdayheistcut1", "玩家1", "Player 1 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _DoomsdayHeistCut2{"doomsdayheistcut2", "玩家2", "Player 2 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _DoomsdayHeistCut3{"doomsdayheistcut3", "玩家3", "Player 3 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _DoomsdayHeistCut4{"doomsdayheistcut4", "玩家4", "Player 4 cut", std::nullopt, std::nullopt, 0};
 
 		class SetCuts : public Command
 		{
@@ -142,7 +142,7 @@ namespace YimMenu::Features
 			}
 		};
 
-		static SetCuts _DoomsdayHeistSetCuts{"doomsdayheistsetcuts", "Set Cuts", "Sets heist cut"};
+		static SetCuts _DoomsdayHeistSetCuts{"doomsdayheistsetcuts", "设置分红", "设置抢劫任务分红"};
 		static ForceReady _DoomsdayHeistForceReady{"doomsdayheistforceready", "强制准备", "强制所有玩家准备就绪"};
 		static Setup _DoomsdayHeistSetup{"doomsdayheistsetup", "设置", "设置末日豪劫"};
 		static SkipHacking _DoomsdayHeistSkipHacking{"doomsdayheistskiphacking", "跳过骇入", "跳过骇入过程"};

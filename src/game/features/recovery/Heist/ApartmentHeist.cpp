@@ -11,10 +11,10 @@ namespace YimMenu::Features
 {
 	namespace ApartmentHeist
 	{
-		static IntCommand _ApartmentHeistCut1{"apartmentheistcut1", "Player 1", "Player 1 cut", std::nullopt, std::nullopt, 0};
-		static IntCommand _ApartmentHeistCut2{"apartmentheistcut2", "Player 2", "Player 2 cut", std::nullopt, std::nullopt, 0};
-		static IntCommand _ApartmentHeistCut3{"apartmentheistcut3", "Player 3", "Player 3 cut", std::nullopt, std::nullopt, 0};
-		static IntCommand _ApartmentHeistCut4{"apartmentheistcut4", "Player 4", "Player 4 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _ApartmentHeistCut1{"apartmentheistcut1", "玩家1", "Player 1 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _ApartmentHeistCut2{"apartmentheistcut2", "玩家2", "Player 2 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _ApartmentHeistCut3{"apartmentheistcut3", "玩家3", "Player 3 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _ApartmentHeistCut4{"apartmentheistcut4", "玩家4", "Player 4 cut", std::nullopt, std::nullopt, 0};
 
 		class SetCuts : public Command
 		{
@@ -148,7 +148,7 @@ namespace YimMenu::Features
 			}
 		};
 
-		static SetCuts _ApartmentHeistSetCuts{"apartmentheistsetcuts", "Set Cuts", "Sets heist cut"};
+		static SetCuts _ApartmentHeistSetCuts{"apartmentheistsetcuts", "设置分红", "设置抢劫任务分红"};
 		static ForceReady _ApartmentHeistForceReady{"apartmentheistforceready", "强制准备", "强制所有玩家准备就绪"};
 		static Setup _ApartmentHeistSetup{"apartmentheistsetup", "设置", "设置当前公寓抢劫"};
 		static SkipHacking _ApartmentHeistSkipHacking{"apartmentheistskiphacking", "跳过骇入", "跳过骇入过程"};

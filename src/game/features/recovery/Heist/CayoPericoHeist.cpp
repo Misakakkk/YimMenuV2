@@ -14,10 +14,10 @@ namespace YimMenu::Features
 {
 	namespace CayoPericoHeist
 	{
-		static IntCommand _CayoPericoHeistCut1{"cayopericoheistcut1", "Player 1", "Player 1 cut", std::nullopt, std::nullopt, 0};
-		static IntCommand _CayoPericoHeistCut2{"cayopericoheistcut2", "Player 2", "Player 2 cut", std::nullopt, std::nullopt, 0};
-		static IntCommand _CayoPericoHeistCut3{"cayopericoheistcut3", "Player 3", "Player 3 cut", std::nullopt, std::nullopt, 0};
-		static IntCommand _CayoPericoHeistCut4{"cayopericoheistcut4", "Player 4", "Player 4 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _CayoPericoHeistCut1{"cayopericoheistcut1", "玩家1", "Player 1 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _CayoPericoHeistCut2{"cayopericoheistcut2", "玩家2", "Player 2 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _CayoPericoHeistCut3{"cayopericoheistcut3", "玩家3", "Player 3 cut", std::nullopt, std::nullopt, 0};
+		static IntCommand _CayoPericoHeistCut4{"cayopericoheistcut4", "玩家4", "Player 4 cut", std::nullopt, std::nullopt, 0};
 
 		class SetCuts : public Command
 		{
@@ -293,7 +293,7 @@ namespace YimMenu::Features
 			}
 		};
 
-		static SetCuts _CayoPericoHeistSetCuts{"cayopericoheistsetcuts", "Set Cuts", "Sets heist cut"};
+		static SetCuts _CayoPericoHeistSetCuts{"cayopericoheistsetcuts", "设置分红", "设置抢劫任务分红"};
 		static ForceReady _CayoPericoHeistForceReady{"cayopericoheistforceready", "强制准备", "强制所有玩家准备就绪"};
 		static Setup _CayoPericoHeistSetup{"cayopericoheistsetup", "设置", "设置佩里科岛劫案"};
 		static SetPrimaryTargetValue _CayoPericoHeistSetPrimaryTargetValue{"cayopericoheistsetprimarytargetvalue", "Set Primary Target Value", "刷新主要目标的价值"};

@@ -6,10 +6,10 @@ namespace YimMenu::Submenus
 	{
 		auto tab = std::make_shared<TabItem>("佩里科岛劫案");
 
-		auto cuts = std::make_shared<Group>("Heist Cuts", 2);
-		auto setups = std::make_shared<Group>("Heist Setups");
+		auto cuts = std::make_shared<Group>("抢劫分红", 2);
+		auto setups = std::make_shared<Group>("抢劫任务设置");
 		auto loots = std::make_shared<Group>("Loots", 2);
-		auto misc = std::make_shared<Group>("Misc", 1);
+		auto misc = std::make_shared<Group>("杂项", 1);
 
 		cuts->AddItem(std::make_shared<IntCommandItem>("cayopericoheistcut1"_J));
 		cuts->AddItem(std::make_shared<IntCommandItem>("cayopericoheistcut3"_J));
